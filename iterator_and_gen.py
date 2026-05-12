@@ -25,5 +25,19 @@ def countdown(n):
         n-=1
 
 
-for num in countdown(5):
-    print(num)
+# for num in countdown(5):
+#     print(num)
+
+
+nums = [x*x for x in range(10)]
+print(type(nums))
+
+nums_gen  = (x*x for x in range(10))
+print(type(nums_gen))
+
+
+# for n in nums_gen:
+#     print(n)
+
+while True:
+    print(next(nums_gen))
